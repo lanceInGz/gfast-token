@@ -52,6 +52,7 @@ func (m *GfToken) diedLine() time.Time {
 
 // 生成token
 func (m *GfToken) GenerateToken(ctx context.Context, key string, data interface{}) (keys string, err error) {
+	g.Dump("lancelancelancelancelance")
 	if len(key) < 40 {
 		err = gerror.New("key length must more than 40")
 		return
